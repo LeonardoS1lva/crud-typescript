@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tarefas com TypeScript</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-light">
+    <header class="bg-danger text-white text-center py-3">
+        <a href="./" class="text-white text-decoration-none">
+            <h1>Lista de Tarefas</h1>
+        </a>
+    </header>
+    <main class="container my-5 d-flex flex-column align-items-center">
+        <form class="form-inline mb-3" id="form">
+            <input type="text" class="form-control" id="task" placeholder="Digite uma tarefa" required>
+            <button type="submit" class="btn btn-danger ml-2">Adicionar</button>
+        </form>
+        <div>
+            <a href="./src/views/visualizar.html" class="text-white text-decoration-none">
+                <button class="btn btn-danger mb-3" id="visualizar">Visualizar</button>
+            </a>
+            <a href="./src/views/editar.html" class="text-white text-decoration-none">
+                <button class="btn btn-danger mb-3" id="editar">Editar</button>
+            </a>
+            <a href="./src/views/deletar.html" class="text-white text-decoration-none">
+                <button class="btn btn-danger mb-3" id="deletar">Deletar</button>
+            </a>
+        </div>
+        <ul id="taskList"></ul>
+    </main>
+    <script src="./dist/app.js"></script>
+</body>
+
+</html>
