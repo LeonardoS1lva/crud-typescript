@@ -8,5 +8,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "font-awesome": "^4.7.0"
+  }
 }
